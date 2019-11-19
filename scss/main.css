@@ -269,6 +269,11 @@
           transform: rotate(90deg) translate(-3rem, -5rem);
 }
 
+.about img {
+  width: 60vh;
+  height: auto;
+}
+
 .projects {
   padding-bottom: 2rem;
 }
@@ -295,17 +300,18 @@
 }
 
 .projects__bio-image .text-secondary {
-  font-size: 2rem;
+  font-size: 3rem;
   margin-bottom: 2rem;
+  color: blanchedalmond;
 }
 
 .projects__items {
-  width: 60vw;
+  width: 50vw;
   margin: 2rem auto 0 auto;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr;
-      grid-template-columns: 1fr;
+  -ms-grid-columns: auto;
+      grid-template-columns: auto;
   grid-gap: 2rem;
 }
 
@@ -317,7 +323,8 @@
 }
 
 .projects__item img {
-  width: 100%;
+  width: 50%;
+  justify-items: center;
 }
 
 .projects__item::after {
@@ -384,9 +391,18 @@
           transform: rotate(90deg) translate(-3rem, -5rem);
 }
 
-.projects fec-image {
-  width: 10%;
-  height: 10%;
+.projects .project_wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.projects .project_description {
+  margin-left: 50px;
 }
 
 .contact {
